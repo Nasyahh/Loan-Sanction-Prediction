@@ -1,10 +1,10 @@
 # Bank Loan Sanction Prediction
 
 ## Overview
-This project aims to *predict the bank loan sanction amount* for each loan applicant based on their personal and financial information. The project uses a *tuned random forest model, which is an ensemble learning technique that combines multiple decision trees to produce a more accurate and robust prediction. The model is evaluated using the **mean absolute percentage error (MAPE)*, which is a measure of how close the predictions are to the actual values.
+This project aims to *predict the bank loan sanction amount* for each loan applicant based on their personal and financial information. The project uses a *tuned random forest model, which is an ensemble learning technique that combines multiple decision trees to produce a more accurate and robust prediction*. The model is evaluated using the **mean absolute percentage error (MAPE)**, which is a measure of how close the predictions are to the actual values.
 
 ## Data
-The data consists of *30,000* loan applicants with *24* features, such as name, income, occupation, credit score, loan amount, default, etc. The target variable is the *loan sanction amount*, which is the amount of money that the bank approves to lend to the applicant. The data is obtained from [Kaggle](^1^).
+The data consists of *30,000* loan applicants with *24* features, such as name, income, occupation, credit score, loan amount, default, etc. The target variable is the *loan sanction amount*, which is the amount of money that the bank approves to lend to the applicant. The data is obtained from Kaggle.
 
 ## Method
 The method used for this project is as follows:
@@ -12,7 +12,7 @@ The method used for this project is as follows:
 - First, the data is *explored* and *preprocessed* by performing descriptive statistics, handling missing values, encoding categorical variables.
 - Second, the data is *split* into training and testing sets with a ratio of 80:20.
 - Third, a *random forest model* is *trained* on the training set using the default hyperparameters.
-- Fourth, the model is *tuned* using *grid search* and *cross-validation* to find the optimal hyperparameters, such as the number of trees, the maximum depth, the minimum samples split, etc.
+- Fourth, the model is *tuned* using *randomized search* and *cross-validation* to find the optimal hyperparameters, such as the number of trees, the maximum depth, the minimum samples split, etc.
 - Fifth, the model is *tested* on the testing set and the *MAPE* is calculated to evaluate the model performance.
 
 ## Result
